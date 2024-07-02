@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="filter">
+          <div>all</div>
+          <div>active</div>
+          <div>done</div>
+          <span id="underline"></span>
+        </div>
+      </header>
+      <!-- //header -->
+      <ul class="todos" id="todos">
+        <li class="todo">
+          <p>스터디 과제 제출</p>
+          <div>
+            <button>done</button>
+            <button>remove</button>
+          </div>
+        </li>
+      </ul>
+      <!-- //todos -->
+      <form id="todo-form">
+        <input type="text" placeholder="할 일을 입력해주세요" id="todo-input" />
+        <button type="submit" id="add-button">+</button>
+      </form>
+      <!-- //form -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
