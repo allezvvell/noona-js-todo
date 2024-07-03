@@ -4,34 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/3be868d704.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="filter">
-          <div>all</div>
-          <div>active</div>
-          <div>done</div>
+      <header class="todo-header">
+        <div class="tabs">
+          <button>all</button>
+          <button>active</button>
+          <button>done</button>
           <span id="underline"></span>
         </div>
       </header>
       <!-- //header -->
-      <ul class="todos" id="todos">
-        <li class="todo">
-          <p>스터디 과제 제출</p>
-          <div>
-            <button>done</button>
-            <button>remove</button>
-          </div>
-        </li>
-      </ul>
+      <ul class="todos" id="todos"></ul>
       <!-- //todos -->
       <form id="todo-form">
         <input type="text" placeholder="할 일을 입력해주세요" id="todo-input" />
         <button type="submit" id="add-button">+</button>
       </form>
       <!-- //form -->
+    </div>
+    <div class="modal-area">
+      <div class="modal-bg"></div>
+      <div class="modal">
+        <input type="text" class="modal-input" />
+        <div class="buttons">
+          <button class="modal-edit-button">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="modal-close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
