@@ -218,3 +218,12 @@ h1 {
   height: 100%;
   color: #fff;
 }
+
+/* responsive */
+@media screen and (max-width: 550px) {
+  .container {
+    width: calc(100% - 3rem);
+    height: calc(100vh - 3rem);
+    border-radius: 0.5rem;
+  }
+}
