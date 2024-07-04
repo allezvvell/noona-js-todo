@@ -129,7 +129,6 @@ function toggleModal() {
 }
 
 function tabAnimation(x, w) {
-  console.log(x, w);
   tabLine.style.left = `${x}px`;
   tabLine.style.width = `${w}px`;
 }

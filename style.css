@@ -74,7 +74,7 @@ h1 {
 
 .todos {
   overflow-y: auto;
-  flex: 1 0 auto;
+  flex-grow: 1;
 }
 .todo {
   height: 3rem;
